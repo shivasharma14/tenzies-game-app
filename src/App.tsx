@@ -11,6 +11,7 @@ export default function App() {
     dice.every((die) => die.isHeld) &&
     dice.every((die) => die.value == dice[0].value);
 
+  //Bring the New Game button in focus
    useEffect(()=>{
     if(gameWon){
       buttonRef.current.focus()
